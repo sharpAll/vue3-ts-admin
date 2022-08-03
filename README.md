@@ -2,37 +2,37 @@
 
 ## Vue 3 + Typescript + Vite
 
-yarn create @vitejs/app vite_vue3_ts --template
+- yarn create @vitejs/app vite_vue3_ts --template
 
 ## Vue Router + Pinia
 
-yarn add vue-router@4
-yarn add pinia
+- yarn add vue-router@4
+- yarn add pinia
 
 ## Scss + Windi Css
 
-yarn add sass-loader dart-sass sass --dev
-yarn add vite-plugin-windicss windicss --dev
+- yarn add sass-loader dart-sass sass --dev
+- yarn add vite-plugin-windicss windicss --dev
 
 ## Naive UI + xicons
 
-yarn add naive-ui --dev
-yarn add vfonts --dev
-yarn add @vicons/antd --dev
+- yarn add naive-ui --dev
+- yarn add vfonts --dev
+- yarn add @vicons/antd --dev
 
 ## ESlint + prettier
 
-yarn add eslint --dev
-yarn add eslint-plugin-vue --dev
-yarn add @typescript-eslint/eslint-plugin --dev
-yarn add @typescript-eslint/parser --dev
-yarn add eslint-plugin-prettier --dev
-yarn add prettier --dev
-yarn add eslint-config-prettier --dev
+- yarn add eslint --dev
+- yarn add eslint-plugin-vue --dev
+- yarn add @typescript-eslint/eslint-plugin --dev
+- yarn add @typescript-eslint/parser --dev
+- yarn add eslint-plugin-prettier --dev
+- yarn add prettier --dev
+- yarn add eslint-config-prettier --dev
 
 ## husky + lint-staged
-yarn add mrm --registry=https://registry.npm.taobao.org --dev
-npx mrm lint-staged
+- yarn add mrm --registry=https://registry.npm.taobao.org --dev
+- npx mrm lint-staged
 
 ```
 // theme style
