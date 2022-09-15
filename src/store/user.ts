@@ -10,9 +10,6 @@ export const useUserStore = defineStore("user", {
     };
   },
   actions: {
-    increment() {
-      this.count++;
-    },
     setToken(token: string, ex: number) {
       this.token = token;
       Storage.set(userEnum.ACCESS_TOKEN, token, ex * 1000);

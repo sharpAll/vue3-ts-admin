@@ -15,5 +15,6 @@ export function loginApi(params: LoginParams): Promise<LoginResult> {
     url: Api.Login,
     method: "POST",
     data: params,
+    headers: { ignoreToken: true },
   });
 }

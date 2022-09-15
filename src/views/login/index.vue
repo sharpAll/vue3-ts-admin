@@ -143,17 +143,13 @@ const handleSubmit = (e: MouseEvent) => {
         uuid: uuid.value,
       };
       try {
-        const { code, msg, token, expire } = await loginApi(params);
-        if (code === 200) {
-          userStore.setUserName(params.username, expire);
-          userStore.setToken(token, expire);
-          const toPath = decodeURIComponent(
-            (route.query?.redirect || "/") as string
-          );
-          router.replace(toPath);
-        } else {
-          message.error(msg || "登录失败");
-        }
+        const { token, expire } = await loginApi(params);
+        userStore.setUserName(params.username, expire);
+        userStore.setToken(token, expire);
+        const toPath = decodeURIComponent(
+          (route.query?.redirect || "/") as string
+        );
+        router.replace(toPath);
       } finally {
         loading.value = false;
       }
