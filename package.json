@@ -42,6 +42,7 @@
     "vfonts": "^0.0.3",
     "vite": "^2.9.0",
     "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
     "vite-plugin-windicss": "^1.8.4",
     "vue-tsc": "^0.29.8",
     "windicss": "^3.5.4"

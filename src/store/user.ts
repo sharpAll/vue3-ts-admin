@@ -6,7 +6,6 @@ export const useUserStore = defineStore("user", {
     return {
       token: Storage.get(userEnum.ACCESS_TOKEN),
       username: Storage.get(userEnum.CURRENT_USER),
-      count: 0,
     };
   },
   actions: {

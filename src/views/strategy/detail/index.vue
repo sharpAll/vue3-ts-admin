@@ -67,7 +67,7 @@
     </n-drawer>
   </div>
 </template>
-<script setup lang="ts">
+<script setup lang="ts" name="StrategyDetail">
 import { ref } from "vue";
 import { useRoute } from "vue-router";
 import { EditOutlined, DollarCircleOutlined } from "@vicons/antd";

@@ -81,7 +81,7 @@
     </n-drawer>
   </div>
 </template>
-<script setup lang="ts">
+<script setup lang="ts" name="StrategyList">
 import { ref, h } from "vue";
 import { SearchOutlined, PlusOutlined } from "@vicons/antd";
 import { NButton, NTag } from "naive-ui";
