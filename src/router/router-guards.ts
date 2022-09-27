@@ -1,7 +1,8 @@
 import { Router } from "vue-router";
 import { useAsyncRouteStore } from "/@/store/asyncRoute";
-import { WhiteList } from "/@/enums/pageEnum";
+import { WhiteList, PageEnum } from "/@/enums/pageEnum";
 import { useTabsViewStore } from "/@/store/tabsView";
+import { useUserStore } from "/@/store/user";
 
 export default function createRouterGuards(router: Router) {
   const asyncRouteStore = useAsyncRouteStore();
@@ -25,6 +26,17 @@ export default function createRouterGuards(router: Router) {
       keepAliveComponentsTemp.push(currentComName);
     }
     asyncRouteStore.setKeepAliveComponents(keepAliveComponentsTemp);
+  });
+
+  const userStore = useUserStore();
+  router.beforeEach((to) => {
+    if (to.name !== PageEnum.BASE_LOGIN_NAME) {
+      if (userStore.username === null || userStore.token === null) {
+        router.replace({
+          name: PageEnum.BASE_LOGIN_NAME,
+        });
+      }
+    }
   });
 
   router.onError((error) => {
