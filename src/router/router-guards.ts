@@ -7,7 +7,7 @@ import { useUserStore } from "/@/store/user";
 export default function createRouterGuards(router: Router) {
   const asyncRouteStore = useAsyncRouteStore();
   router.afterEach((to) => {
-    document.title = `组件库|${to?.meta?.title}`;
+    document.title = `示例项目|${to?.meta?.title}`;
     // 在这里设置需要缓存的组件名称
     const currentComName: any = to.matched.find(
       (item) => item.name === to.name

@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="title"><i class="logo"></i>策略平台</div>
+    <div class="title"><i class="logo"></i>示例项目</div>
     <ul class="menu-box">
       <li class="menu-item" @click="go('/home')">首页</li>
       <li class="menu-item" @click="go('/strategy/list')">策略列表</li>

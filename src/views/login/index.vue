@@ -5,7 +5,7 @@
         <div class="view-account-top-logo">
           <img :src="DC_TEXT_PNG" alt="" />
         </div>
-        <div class="view-account-top-desc">欢迎使用策略平台！</div>
+        <div class="view-account-top-desc">欢迎使用示例项目！</div>
       </div>
       <div class="view-account-form">
         <n-form
